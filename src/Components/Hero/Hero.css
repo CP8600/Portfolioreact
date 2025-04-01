@@ -1,0 +1,64 @@
+.hero {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-align: center;
+    /* padding: 20px; */
+    /* Adds breathing room */
+}
+
+.hero-text {
+    text-align: center;
+    max-width: 500px;
+    color: #ffffff;
+    line-height: 1.6;
+    /* Slightly increased for better readability */
+    margin: 20px auto;
+    /* More spacing from edges */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* Ensures even spacing between elements */
+}
+
+.hero-text h1 {
+    font-size: 55px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    /* Adds a little space below */
+}
+
+.hero-text p {
+    font-size: 20px;
+    max-width: 500px;
+    /* Matches max width of container */
+    margin: 0 auto;
+    /* Centers text */
+}
+
+.sub-p {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../../Assets/earth.jpg') no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -1;
+
+}

@@ -1,0 +1,23 @@
+.router_container {
+    min-height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color: inherit;
+}
+
+.router_container ul {
+    height: 100px;
+    margin: 100px auto;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    border-radius: 8px;
+}
+
+.router_container li {
+    padding: 20px;
+}
