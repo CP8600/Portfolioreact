@@ -4,7 +4,6 @@ import GetDragonballApi from "../../api/DragonballApi/GetDragonballApi";
 import DBPlanets from "../../api/DragonballApi/DB-Planets";
 function Dragonball() {
   const [characters, setCharacters] = useState([]);
-  const [planets, setPlanets] = useState([]);
   const [transformCharacter, setTransformCharacter] = useState({});
   useEffect(() => {
     const fetchDragonballData = async () => {
