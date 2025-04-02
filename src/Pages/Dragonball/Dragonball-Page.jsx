@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import "../../Pages/Dragonball/Dragonball-page.css";
 import GetDragonballApi from "../../api/DragonballApi/GetDragonballApi";
-import DBPlanets from "../../api/DragonballApi/DB-Planets";
 function Dragonball() {
   const [characters, setCharacters] = useState([]);
   const [transformCharacter, setTransformCharacter] = useState({});
