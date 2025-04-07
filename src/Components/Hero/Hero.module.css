@@ -11,39 +11,39 @@
     /* Adds breathing room */
 }
 
-.hero-text {
+.hero_text {
     text-align: center;
-    max-width: 500px;
     color: #ffffff;
     line-height: 1.6;
     /* Slightly increased for better readability */
-    margin: 20px auto;
-    /* More spacing from edges */
     display: flex;
     flex-direction: column;
     gap: 15px;
     /* Ensures even spacing between elements */
+    background-color: rgba(0, 0, 0, 0.849);
+    width: 100vw;
 }
 
-.hero-text h1 {
-    font-size: 55px;
+.hero_text_h1 {
+    font-size: 45px;
     font-weight: 600;
     margin-bottom: 10px;
     /* Adds a little space below */
 }
 
-.hero-text p {
-    font-size: 20px;
+.hero_text_p {
+    /* font-size: 15px; */
     max-width: 500px;
     /* Matches max width of container */
     margin: 0 auto;
     /* Centers text */
 }
 
-.sub-p {
-    font-size: 30px;
+.sub_p {
+    font-size: 20px;
     font-weight: 400;
     margin-bottom: 10px;
+    color: rgb(255, 255, 255);
 }
 
 
@@ -58,7 +58,7 @@
     background: url('../../Assets/earth.jpg') no-repeat center center;
     background-size: cover;
     background-position: center;
-    opacity: 0.5;
+    /* opacity: 0.5; */
     z-index: -1;
 
 }

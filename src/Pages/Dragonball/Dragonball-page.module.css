@@ -1,53 +1,77 @@
-.dragonball-container {
-    margin-top: 70px;
+.dragonballContainer {
+    margin-top:40px;
     position: relative;
     min-height: 100vh;
     width: 100%;
     text-align: center;
+    background-color: rgba(37, 32, 32, 0.953);
 }
 
-.dragonball-container h2 {
-    font-size: 20px;
-    color: rgb(150, 241, 127);
-
-}
-
-.DB-character-container {
-    width: 100vw;
+.header {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+    /* Optional spacing */
+}
+
+.h1 {
+    margin-left: auto;
+}
+
+.titleSpan {
+    position: absolute;
+    left: 0;
+    background-color: rgba(253, 20, 20, 0.923);
+    padding: 10px;
+    font-weight: 600;
+}
+
+.dragonball_container_h2 {
+    font-size: 1.2em;
+    font-weight: 800;
+    color: white;
+    letter-spacing: 1.6px;
+
+}
+
+.DB_Character_Container {
+    width: 100vw;
+    display: inline-flex;
+    /* flex-wrap: wrap; */
     /* Allows characters to wrap on small screens */
     justify-content: center;
     /* Centers items horizontally */
     padding: 20px;
+    margin-top: 30px;
     /* Adds spacing around the container */
-
 }
 
-.character-info {
-    background-color: gainsboro;
-    height: 100px;
+.character_info {
+    background-color: cadetblue;
+    min-height: 200px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-
+    font-size: 20px;
+    color: black;
     position: relative;
 }
 
-.db-ul {
+.db_ul {
     display: flex;
     flex-wrap: wrap;
     /* Makes sure items wrap on smaller screens */
     gap: 15px;
     /* Adds space between items */
     justify-content: center;
-    padding: 0;
 
 }
 
-.db-li {
+.db_li {
     color: white;
     font-size: 18px;
     display: flex;
@@ -61,62 +85,37 @@
     transition: transform 0.2s ease-in-out;
     /* background-color: cadetblue; */
     width: 300px;
-    margin-bottom: 100px;
+    /* min-width: fit-content; */
+    /* min-width: 300px; */
+    margin-bottom: 50px;
     background-color: rgb(183, 255, 135);
 }
 
-.db-image:hover {
+.db_image:hover {
     transform: scale(2);
     transition-duration: 1s;
     /* Subtle hover effect */
     /* filter: none; */
 }
 
-.db-image {
+.db_image {
     height: 250px;
     width: auto;
+    padding: 5px;
     border-radius: 10px;
     /* Adds rounded corners */
-    margin-top: 10px;
-    position: relative;
+    /* margin-top: 10px; */
+    /* position: relative; */
     /* filter: blur(21px); */
     /* Adds spacing between name and image */
     z-index: 9;
 }
 
-.planets {
-    width: auto;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-.planet-ul {
-    display: flex;
-    flex-wrap: wrap;
-    /* Makes sure items wrap on smaller screens */
-    gap: 15px;
-    /* Adds space between items */
-    justify-content: center;
-    padding: 0;
-
-}
-
-.planet-il {
-
+.transform_btn {
+    background-color: rgb(30, 126, 117);
     color: white;
-    font-size: 18px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    font-size: 20px;
+    border-radius: 15%;
     padding: 10px;
-    border-radius: 10px;
-    /* Smooth edges */
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-    /* Soft shadow */
-    transition: transform 0.2s ease-in-out;
-    background-color: cadetblue;
+    margin: 10px;
 }

@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "../Bubbles/Bubbles.css";
 const ShowBubbles = () => {
   const [bubbles, setBubbles] = useState([]);
-
+  const bubbleRef = useRef(null);
   useEffect(() => {
     const interval = setInterval(() => {
       setBubbles((prevBubbles) => [...prevBubbles]);
@@ -27,14 +27,27 @@ const ShowBubbles = () => {
     }, 5000);
   };
 
-  const handleBubbleCreator = () => {
-    console.log("btn");
+  const startBubbles = () => {
     createBubble();
+    bubbleRef.current = setInterval(createBubble, 200);
   };
+
+  const endBubbles = () => {
+    clearInterval(bubbleRef.current);
+  };
+
+  // const handleBubbleCreator = () => {
+  //   console.log("btn");
+  //   createBubble();
+  // };
 
   return (
     <div className="bubble-container">
-      <button className="bubble-btn" onClick={handleBubbleCreator}>
+      <button
+        className="bubble-btn"
+        onMouseDown={startBubbles}
+        onMouseUp={endBubbles}
+      >
         Create Bubbles
       </button>
       {bubbles?.map((bubble) => (

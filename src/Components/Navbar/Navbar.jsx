@@ -1,29 +1,36 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "../Navbar/Navbar.css";
+import styles from "../Navbar/Navbar.module.css";
 
 const Navbar = () => {
-  const [navClassName, setNavClassName] = useState("navbar-top");
+  const [navClassName, setNavClassName] = useState(styles.navbar_top);
 
+  // Handle class name change when the button is clicked
   const handleNavChange = () => {
     setNavClassName((prevClass) =>
-      prevClass === "navbar-top" ? "navbar-left" : "navbar-top"
+      prevClass === styles.nabar_top ? styles.navbar_left : styles.navbar_top
     );
-    console.log("changed");
-    console.log(navClassName);
+    console.log("Nav class changed");
   };
 
+  // Log the navClassName after it has been updated
+  useEffect(() => {}, [navClassName]);
+
   return (
-    <nav className={`navbar ${navClassName}`}>
-      <button className="navbar-switch-btn" onClick={handleNavChange}>
-        <h3>Change Nav</h3>
+    <nav className={`${styles.navbar} ${navClassName}`}>
+      <button className={styles.navbar_switch_btn} onClick={handleNavChange}>
+        <h3 className={styles.h3}>Change Nav</h3>
       </button>
-      <ul className="navbar-ul">
-        <li className="navbar-li">
-          <Link to={`/`}>Home</Link>
+      <ul className={styles.navbar_ul}>
+        <li className={styles.navbar_li}>
+          <Link to={`/`} className={styles.a}>
+            Home
+          </Link>
         </li>
-        <li className="navbar-li">
-          <Link to={`/PageRouter`}>Projects</Link>
+        <li className={styles.navbar_li}>
+          <Link to={`/PageRouter`} className={styles.a}>
+            Projects
+          </Link>
         </li>
       </ul>
     </nav>

@@ -1,0 +1,145 @@
+/* Container for the music info section */
+.info_container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    /* Full height */
+    margin-top: 50px;
+    /* Space from top */
+}
+
+/* Flex layout for sections */
+.flexbox {
+    width: 33%;
+    padding-top: 100px;
+    /* Space at the top */
+    overflow-y: auto;
+    /* Allow scrolling */
+    height: 100vh;
+    /* Full viewport height */
+}
+
+/* Style for the artist card */
+.artists {
+    width: 100%;
+    height: 240px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    border: solid 2px white;
+    background-color: rgba(43, 89, 100, 0.69);
+    /* Semi-transparent */
+}
+
+/* Style for album info */
+.albumInfo {
+    background-color: rosybrown;
+    margin: 200px;
+    /* Large margin, could be adjusted */
+}
+
+/* Artist list styling */
+.artist_ul {
+    color: #eaeaea;
+    list-style-type: none;
+    font-size: 30px;
+    font-weight: 500;
+    width: 200px;
+}
+
+/* Track list container */
+.track_ol {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Track list item style */
+.tracksLi {
+    list-style-type: none;
+    /* Remove bullets */
+}
+
+/* Album name styling */
+.albumName {
+    display: list-item;
+    font: 1rem "Fira Sans", sans-serif;
+    margin-bottom: 0.5rem;
+    color: rgb(244, 248, 44);
+    /* Bright yellow */
+    font-size: 20px;
+}
+
+/* Common background and styling for sections */
+.left_box,
+.middle_box,
+.right_box {
+    background-color: rgba(68, 91, 107, 0.9);
+    /* Soft background */
+}
+
+/* Left panel (Artist info) */
+.left_box {
+    position: relative;
+    color: white;
+    font-size: 20px;
+    width: 33%;
+    overflow-y: auto;
+}
+
+/* Middle panel (Album & track list) */
+.middle_box {
+    position: relative;
+    color: white;
+    font-size: 20px;
+    width: 33%;
+    overflow-y: auto;
+    align-items: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Right panel */
+.right_box {
+    background-color: inherit;
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+    width: 33%;
+}
+
+/* Album name in the middle panel */
+.album_name {
+    color: #FFCC00;
+    /* Gold color */
+    text-align: center;
+}
+
+/* Album image styling */
+.albumImage {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    .flexbox {
+        width: 100%;
+        padding-top: 20px;
+        /* Less padding */
+    }
+
+    .info_container {
+        flex-direction: column;
+        /* Stack sections */
+    }
+}
