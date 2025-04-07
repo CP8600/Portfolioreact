@@ -1,13 +1,11 @@
 import { useEffect, useState } from "react";
 import styles from "../../Pages/Dragonball/Dragonball-page.module.css";
 import GetDragonballApi from "../../api/DragonballApi/GetDragonballApi";
-import getTransformationsApi from "../../api/DragonballApi/Transformations";
-
+import DBPlanets from "../../api/DragonballApi/DB-Planets";
 function Dragonball() {
   // State to store the base characters fetched from the API
   const [characters, setCharacters] = useState([]);
-
-  // State to store the transformations mapped to character IDs
+  const [planets, setPlanets] = useState([]);
   const [transformCharacter, setTransformCharacter] = useState({});
 
   /**
