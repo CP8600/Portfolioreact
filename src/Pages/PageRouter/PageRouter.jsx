@@ -9,13 +9,16 @@ const PageRouter = () => {
           <Link to={`/bubbles`}>Bubbles</Link>
         </li>
         <li className={styles.li}>
-          <Link to={"/Todo"}>Todo List</Link>
+          <Link to={"/todo"}>Todo List</Link>
         </li>
         <li className={styles.li}>
-          <Link to={"/Music"}>Spotify Clone</Link>
+          <Link to={"/music"}>Spotify Clone</Link>
         </li>
         <li className={styles.li}>
-          <Link to={"/Dragonball"}>Dragonball</Link>
+          <Link to={"/dragonball"}>Dragonball</Link>
+        </li>
+        <li className={styles.li}>
+          <Link to={"/bookfinder"}>Book Finder</Link>
         </li>
       </ul>
     </div>

@@ -4,8 +4,9 @@
     display: flex;
     flex-direction: row;
     min-height: 100vh;
+        background: linear-gradient(to bottom right, rgb(108, 224, 228), black);
     /* Full height */
-    margin-top: 50px;
+    /* margin-top: 50px; */
     /* Space from top */
 }
 
@@ -38,8 +39,7 @@
 /* Style for album info */
 .albumInfo {
     background-color: rosybrown;
-    margin: 200px;
-    /* Large margin, could be adjusted */
+    margin: 5rem auto;
 }
 
 /* Artist list styling */

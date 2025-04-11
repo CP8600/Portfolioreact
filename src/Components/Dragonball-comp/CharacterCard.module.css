@@ -1,0 +1,86 @@
+
+
+
+.dragonball_container_h2 {
+    font-size: 1.2em;
+    font-weight: 800;
+    color: white;
+    letter-spacing: 1.6px;
+
+}
+
+.DB_Character_Container {
+    width: 100vw;
+    display: inline-flex;
+    /* flex-wrap: wrap; */
+    /* Allows characters to wrap on small screens */
+    justify-content: center;
+    /* Centers items horizontally */
+    padding: 20px;
+    /* margin-top: 30px; */
+    /* Adds spacing around the container */
+}
+
+.character_info {
+    background-color: cadetblue;
+    min-height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+    color: black;
+    position: relative;
+}
+
+
+
+.db_li {
+    color: white;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 10px; */
+    border-radius: 10px;
+    /* Smooth edges */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    /* Soft shadow */
+    transition: transform 0.2s ease-in-out;
+    /* background-color: cadetblue; */
+    width: 300px;
+    /* min-width: fit-content; */
+    /* min-width: 300px; */
+    margin-bottom: 50px;
+    background-color: rgb(183, 255, 135);
+}
+
+.db_image:hover {
+    transform: scale(2);
+    transition-duration: 1s;
+    /* Subtle hover effect */
+    /* filter: none; */
+}
+
+.db_image {
+    height: 250px;
+    width: auto;
+    padding: 5px;
+    border-radius: 10px;
+    /* Adds rounded corners */
+    /* margin-top: 10px; */
+    /* position: relative; */
+    /* filter: blur(21px); */
+    /* Adds spacing between name and image */
+    z-index: 9;
+}
+
+.transform_btn {
+    background-color: rgb(30, 126, 117);
+    color: white;
+    font-size: 20px;
+    border-radius: 15%;
+    padding: 10px;
+    margin: 10px;
+}

@@ -10,6 +10,7 @@ const Music = () => {
   const [artistData, setArtistData] = useState([]); // Store artist info
   const [tracksData, setTracksData] = useState([]); // Store tracks info
   const [albumData, setAlbumData] = useState([]); // Store album info
+  const [selectedAlbum, setSelectedAlbum] = useState(null); // Track selected album
   // const [selectedAlbum, setSelectedAlbum] = useState(null); // Track selected album
   // const [selectedTracks, setSelectedTracks] = useState([]); // Track selected album's tracks
 
@@ -73,21 +74,10 @@ const Music = () => {
     }
   }, [albumData]); // Runs when albumData updates
 
-  // const handleAlbumClick = async (album) => {
- 
-  //   console.log("hello"); // Placeholder log message
-  //   setSelectedAlbum(album); // Set the selected album
-
-  //   if (!album?.id) return; // Return if no album ID is found
-
-  //   try {
-  //     const tracks = await getTracksData(album); // Fetch tracks for selected album
-  //     setSelectedTracks(tracks || []); // Set selected tracks state
-  //   } catch (error) {
-  //     console.error("Error fetching tracks:", error); // Log error if fetching tracks fails
-  //     setSelectedTracks([]); // Reset selected tracks on error
-  //   }
-  // };
+  const handleAlbumClick = (index) => {
+    console.log(artistData[index].name);
+    setSelectedAlbum(index);
+  };
 
   return (
     <div className={styles.info_container}>
@@ -99,7 +89,7 @@ const Music = () => {
             <div
               className={styles.artists}
               key={index}
-              // onClick={() => handleAlbumClick} // Handle album click (currently not used)
+              onClick={() => handleAlbumClick(index)}
             >
               <ul className={styles.artist_ul}>
                 <li>{artist?.name || "No Data Available"}</li>

@@ -36,10 +36,6 @@ const ShowBubbles = () => {
     clearInterval(bubbleRef.current);
   };
 
-  // const handleBubbleCreator = () => {
-  //   console.log("btn");
-  //   createBubble();
-  // };
 
   return (
     <div className="bubble-container">
