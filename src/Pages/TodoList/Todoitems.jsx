@@ -1,12 +1,7 @@
-import "./CSS/ToDoItems.css";
+import "./CSS/Todoitems.css";
 
 const ToDoItems = () => {
-  return (
-    <div className="todoitems">
-      {" "}
-      <div className="todoitems-text"></div>
-    </div>
-  );
+  return <div className="todoitems-text"></div>;
 };
 
 export default ToDoItems;

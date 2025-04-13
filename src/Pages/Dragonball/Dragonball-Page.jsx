@@ -9,16 +9,6 @@ function Dragonball() {
   const { characters, setCharacters, transformCharacter } =
     useDragonballCharacters();
 
-  /**
-   * Function to check if a character's base name matches a transformation name.
-   * Ensures that transformations like "Goku SSJ" match "Goku".
-   */
-
-  /**
-   * Handles the transformation of a character when the user clicks the transform button.
-   * Updates the character's displayed image and name to the transformed version.
-   */
-
   const handleTransform = (character) => {
     const transformations = transformCharacter[character.id];
     if (!transformations || transformations.length === 0) {

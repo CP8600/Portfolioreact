@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
-import "../Bubbles/Bubbles.css";
+import styles from "../Bubbles/Bubbles.module.css";
+
 const ShowBubbles = () => {
   const [bubbles, setBubbles] = useState([]);
   const bubbleRef = useRef(null);
@@ -13,7 +14,7 @@ const ShowBubbles = () => {
   const createBubble = () => {
     const newBubble = {
       id: Math.random(),
-      size: Math.floor(Math.random() * 50) + 10,
+      size: Math.floor(Math.random() * 100) + 10,
       left: Math.random() * 100,
       backgroundColor: `#${Math.floor(Math.random() * 16777215).toString(16)}`,
     };
@@ -36,19 +37,19 @@ const ShowBubbles = () => {
     clearInterval(bubbleRef.current);
   };
 
-
   return (
-    <div className="bubble-container">
+    <div className={styles.bubbleContainer}>
       <button
-        className="bubble-btn"
+        className={styles.bubbleBtn}
+        type="button"
         onMouseDown={startBubbles}
         onMouseUp={endBubbles}
       >
-        Create Bubbles
+        <span className={styles.spanBtn}>Create Bubbles</span>
       </button>
       {bubbles?.map((bubble) => (
         <div
-          className="bubble"
+          className={styles.bubble}
           key={bubble.id}
           style={{
             width: `${bubble.size}px`,

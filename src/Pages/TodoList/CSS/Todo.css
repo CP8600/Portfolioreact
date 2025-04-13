@@ -1,57 +1,85 @@
+.todoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 .todo {
     width: 600px;
-    min-height: 732px;
+    max-width: 90%;
+    height: 70%;
+    margin-top: 0px;
+    padding: 0px 44px 30px;
     border-radius: 20px;
     background-color: #fff;
-    margin: auto;
-    margin-top: 174px;
+    color: black;
     display: flex;
     flex-direction: column;
-    padding: 0px 44px;
-    padding-bottom: 30px;
-    margin-bottom: 100px;
-    color: black;
 }
 
 .todo-header {
-    
-    /* margin-top: 84px; */
     color: #002765;
     font-size: 36px;
     font-weight: 600;
     line-height: 34px;
+    margin-bottom: 10px;
 }
-.todo-add{
+
+.todo-add {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 45px;
+    /* margin-top: 45px; */
+    margin: 10px;
 }
 
-
-.todo-input{
-border-radius: 50px;
-background: #edeef0;
-border: none;
-outline: none;
-width: 576px;
-height: 80px;
-padding-left: 35px;
-font-size: 20px;
-color: black;
+.todo-input {
+    width: 476px;
+    height: 80px;
+    padding-left: 35px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    background: #edeef0;
+    font-size: 20px;
+    color: black;
 }
 
 .todo-add-btn {
-    border-radius: 50px;
-    background-color: #ff6739;
     width: 187px;
     height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-left: -100px;
+    border-radius: 50px;
+    background-color: #ff6739;
     color: #ffffff;
     font-size: 26px;
     font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.todo-add-btn:hover {
+    background-color: #e15a2e;
+}
+
+.todo-list-item {
+    margin: 10px 0;
+    width: 100%;
+    list-style-type: decimal;
+    /* ensures numbers show */
+    list-style-position: inside;
+    font-size: 1.4em;
+    /* keeps number aligned with text */
+    padding: 5px;
+}
+
+.todoList {
+    white-space: inherit;
+    overflow: scroll;
+    width: 100%;
+
 }
