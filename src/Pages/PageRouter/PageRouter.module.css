@@ -3,7 +3,7 @@
     width: 100vw;
     position: relative;
     /* background: linear-gradient(to bottom right, rgb(108, 224, 228), black); */
-    background: linear-gradient(to top left,  rgb(25, 171, 204) , rgb(17, 77, 105));
+    background: linear-gradient(to top left, rgb(25, 171, 204), rgb(17, 77, 105));
     background-repeat: no-repeat;
     display: flex;
     /* fixed: was inline */
@@ -35,6 +35,8 @@
     text-align: center;
     border-radius: 8px;
     transition: transform 0.3s ease, color 0.3s ease;
+    display: flex;
+    flex-direction: column;
 }
 
 .li:hover {
@@ -47,4 +49,13 @@ a {
     display: inline-block;
     padding: 10px 20px;
     color: inherit;
+}
+
+.desctiption {
+    font-size: 18px;
+    font-weight: 700;
+    color: red;
+    max-width: 100px;
+    min-width: fit-content;
+    background-color: saddlebrown;
 }

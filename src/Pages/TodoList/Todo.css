@@ -1,8 +1,19 @@
 .todoContainer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: #000000;
+}
+
+.todo-header {
+    color: #ffc23e;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 34px;
+    margin-bottom: 10px;
+    list-style-type: none;
 }
 
 .todo {
@@ -18,12 +29,36 @@
     flex-direction: column;
 }
 
-.todo-header {
-    color: #002765;
-    font-size: 36px;
-    font-weight: 600;
-    line-height: 34px;
-    margin-bottom: 10px;
+/* ol list  */
+.todoList {
+    white-space: inherit;
+    overflow: scroll;
+    width: 100%;
+    display: inline-block;
+
+    padding-left: 20px;
+    /* optional: controls indentation */
+    text-align: left;
+}
+
+/* li in list */
+.todo-list-item {
+    /* margin: 10px 0; */
+    width: 100%;
+    list-style-type: decimal;
+    /* ensures numbers show */
+    list-style-position: outside;
+    font-size: 1.4em;
+    /* keeps number aligned with text */
+    padding: 5px;
+    color: #ffc23e;
+    line-height: 1.5;
+    left: 0;
+    position: relative;
+    justify-content: space-between;
+    text-align: left;
+    text-transform: capitalize;
+
 }
 
 .todo-add {
@@ -66,20 +101,12 @@
     background-color: #e15a2e;
 }
 
-.todo-list-item {
-    margin: 10px 0;
-    width: 100%;
-    list-style-type: decimal;
-    /* ensures numbers show */
-    list-style-position: inside;
-    font-size: 1.4em;
-    /* keeps number aligned with text */
-    padding: 5px;
+.empty-state {
+    list-style: none;
+    font-size: 2em;
+    color: #ffc23e;
 }
 
-.todoList {
-    white-space: inherit;
-    overflow: scroll;
-    width: 100%;
-
+.move {
+    background-color: red;
 }

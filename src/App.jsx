@@ -37,7 +37,7 @@ const router = createBrowserRouter([
       { path: "/todo", element: <Todo /> },
       { path: "music", element: <Music /> },
       { path: "/dragonball", element: <Dragonball /> },
-      { path: "/bookfinder", element: <BookFinder_WithGoogle /> }
+      { path: "/bookfinder", element: <BookFinder_WithGoogle /> },
       // { path: "*", element: <Home /> }, // Catch-all route (optional)
     ],
   },

@@ -9,6 +9,7 @@ const getArtistData = async (artistId, retries = 3) => {
 
     const response = await fetch(
       `https://api.spotify.com/v1/artists/${artistId}`,
+      // `https://api.spotify.com/v1/me/top/artists?limit=20&time_range=medium_term`, // optional query params
       {
         headers: {
           Authorization: `Bearer ${token}`,
@@ -22,6 +23,7 @@ const getArtistData = async (artistId, retries = 3) => {
       const retryAfter = response.headers.get("Retry-After") || 10; // Default to 10 seconds if not provided
       if (retries > 0) {
         console.warn(`Rate limited. Retrying after ${retryAfter} seconds...`);
+
         await new Promise((resolve) => setTimeout(resolve, retryAfter * 1000)); // Wait for retry period
         return getArtistData(artistId, retries - 1); // Retry the request
       }
@@ -31,8 +33,9 @@ const getArtistData = async (artistId, retries = 3) => {
     if (!response.ok) {
       throw new Error(`HTTP error Status ${response.status}`);
     }
-
     const json = await response.json();
+    console.log(json);
+
     return json;
   } catch (error) {
     console.error("Error fetching music data:", error);

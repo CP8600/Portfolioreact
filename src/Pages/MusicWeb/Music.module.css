@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: row;
     min-height: 100vh;
-        background: linear-gradient(to bottom right, rgb(108, 224, 228), black);
+    background: linear-gradient(to bottom right, rgb(108, 224, 228), black);
     /* Full height */
     /* margin-top: 50px; */
     /* Space from top */
@@ -19,6 +19,7 @@
     /* Allow scrolling */
     height: 100vh;
     /* Full viewport height */
+    
 }
 
 /* Style for the artist card */
@@ -31,15 +32,26 @@
     display: inline-flex;
     flex-direction: row;
     margin-bottom: 10px;
-    border: solid 2px white;
     background-color: rgba(43, 89, 100, 0.69);
-    /* Semi-transparent */
+    border-radius: 10px;
+    /* Round the corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    /* Add subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.artists:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+    cursor: pointer;
 }
 
 /* Style for album info */
 .albumInfo {
     background-color: rosybrown;
     margin: 5rem auto;
+    transform: scale(2);
 }
 
 /* Artist list styling */
@@ -49,6 +61,7 @@
     font-size: 30px;
     font-weight: 500;
     width: 200px;
+    
 }
 
 /* Track list container */
@@ -91,7 +104,9 @@
     color: white;
     font-size: 20px;
     width: 33%;
-    overflow-y: auto;
+    /* overflow-y: auto; */
+        overflow-y: scroll;
+            height: 100vh;
 }
 
 /* Middle panel (Album & track list) */
