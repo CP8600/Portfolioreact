@@ -2,7 +2,7 @@
 import styles from "../../Pages/MusicWeb/Music.module.css";
 import { useState, useEffect } from "react";
 import getArtistData from "../../api/Spotify_Artists/ArtistsInfo";
-import getTracksData from "../../api/Spotify_Artists/TracksLists";
+import getTracksData from "../../api/Spotify_Artists/TracksInfo";
 import GetAlbumInfo from "../../api/Spotify_Artists/AlbumInfo";
 
 import AlbumSelector from "../../Components/Spotify/AlbumSelector";

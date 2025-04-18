@@ -1,0 +1,66 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.h1 {
+    background-color: rgb(199, 29, 29);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.li {
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(96, 215, 255);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+    color: black;
+}
+
+.img:hover {
+    transform: scale(2);
+    transition-duration: 1s;
+    /* Subtle hover effect */
+    /* filter: none; */
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+    .ul {
+        flex-direction: column;
+        /* Stack the list items vertically */
+        align-items: center;
+    }
+
+    .li {
+        width: 100%;
+        /* Allow list items to take full width on smaller screens */
+        margin-bottom: 20px;
+    }
+}

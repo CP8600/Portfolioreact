@@ -1,6 +1,6 @@
 const Get_Pokemon_Api = async () => {
   try {
-    const response = await fetch("https://pokeapi.co/api/v2/pokemon/ditto", {
+    const response = await fetch("https://pokeapi.co/api/v2/pokemon/", {
       headers: { "Content-Type": "application/json" },
     });
 
