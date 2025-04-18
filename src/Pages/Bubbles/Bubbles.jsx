@@ -13,7 +13,7 @@ const ShowBubbles = () => {
         onMouseUp={endBubbles}
       >
         {/* <span className={styles.spanBtn}>Create Bubbles</span> */}
-        Create Bubbles
+        Create Bubble
       </button>
       {bubbles?.map((bubble) => (
         <div
