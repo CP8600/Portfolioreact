@@ -1,10 +1,7 @@
-
-
-
 .dragonball_container_h2 {
     font-size: 1.2em;
     font-weight: 800;
-    color: white;
+    color: #ffecec;
     letter-spacing: 1.6px;
 
 }
@@ -37,7 +34,7 @@
 
 
 .db_li {
-    color: white;
+    color: #ffecec;
     font-size: 18px;
     display: flex;
     flex-direction: column;
@@ -78,9 +75,18 @@
 
 .transform_btn {
     background-color: rgb(30, 126, 117);
-    color: white;
+    color: #ffecec;
     font-size: 20px;
     border-radius: 15%;
     padding: 10px;
     margin: 10px;
+}
+
+.noTransform {
+    /* background-color: rgb(30, 126, 117); */
+    color: #ffecec;
+    font-size: 20px;
+    border-radius: 15%;
+    padding: 10px;
+    font-weight: 600;
 }

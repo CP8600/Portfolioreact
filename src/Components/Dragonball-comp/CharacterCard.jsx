@@ -1,8 +1,9 @@
 import { memo } from "react";
-
 import styles from "../Dragonball-comp/CharacterCard.module.css";
-const CharacterCard = ({ character, onTransform }) => {
-  const { image, maxKi, affiliation, name, char, isTransformed } = character;
+
+const CharacterCard = ({ character, onTransform, hasTransformations }) => {
+  const { image, maxKi, affiliation, name, char /* isTransformed */ } =
+    character;
 
   return (
     <li className={styles.db_li}>
@@ -15,12 +16,19 @@ const CharacterCard = ({ character, onTransform }) => {
         <h2 className={styles.dragonball_container_h2}>{name}</h2>
         <span>Max Ki: {maxKi || char?.maxKi}</span>
         <span>{affiliation || char?.affiliation}</span>
-        <button
-          className={styles.transform_btn}
-          onClick={() => onTransform(character)}
-        >
-          {isTransformed ? "Next Form" : "Transform"}
-        </button>
+        {hasTransformations ? (
+          <button
+            className={styles.transform_btn}
+            onClick={() => onTransform(character)}
+          >
+            {/* {isTransformed ? "Next Form" : "Transform"} */}
+            Transform
+          </button>
+        ) : (
+          <span className={styles.noTransform}>
+            No Transformation Available
+          </span>
+        )}
       </section>
     </li>
   );

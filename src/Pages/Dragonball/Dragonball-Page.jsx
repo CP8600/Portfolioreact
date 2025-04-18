@@ -1,4 +1,5 @@
 import styles from "../../Pages/Dragonball/Dragonball-page.module.css";
+
 import CharacterCard from "../../Components/Dragonball-comp/CharacterCard";
 import useDragonballCharacters from "../../hooks/DragonBallCharacters";
 
@@ -59,6 +60,7 @@ function Dragonball() {
                 key={character.id}
                 character={character}
                 onTransform={handleTransform}
+                hasTransformations={!!transformCharacter[character.id]?.length}
               />
             ))
           ) : (
