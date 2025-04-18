@@ -30,8 +30,20 @@
     border-radius: 50%;
     font-size: 20px;
     z-index: 1;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    /* Removes gray tap highlight on Android/iOS */
+    user-select: none;
+    /* Prevents text highlight on accidental long press */
+    touch-action: manipulation;
+    /* Helps reduce delays on taps */
 
 
+}
+
+.bubbleBtn:focus {
+    outline: none;
+    box-shadow: none;
 }
 
 .bubbleBtn:active {
