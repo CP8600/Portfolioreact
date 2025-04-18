@@ -17,6 +17,9 @@ const PageRouter = () => {
         <li className={styles.li}>
           <Link to={"/dragonball"}>Dragonball</Link>
         </li>
+        <li className={styles.li}>
+          <Link to={"/pokemon"}>Pokemon</Link>
+        </li>
         {/* <li className={styles.li}>
           <Link to={"/bookfinder"}>Book Finder</Link>
         </li> */}

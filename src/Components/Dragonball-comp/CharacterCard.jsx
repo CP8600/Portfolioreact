@@ -1,3 +1,5 @@
+import { memo } from "react";
+
 import styles from "../Dragonball-comp/CharacterCard.module.css";
 const CharacterCard = ({ character, onTransform }) => {
   const { image, maxKi, affiliation, name, char, isTransformed } = character;
@@ -24,4 +26,5 @@ const CharacterCard = ({ character, onTransform }) => {
   );
 };
 
-export default CharacterCard;
+// export default CharacterCard;
+export default memo(CharacterCard);

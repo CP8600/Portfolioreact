@@ -69,3 +69,41 @@
     justify-content: center;
 
 }
+
+@media only screen and (max-width: 600px) {
+    .dragonballContainer {
+        background-color: rgba(42, 42, 42, 0.923);
+        flex-direction: column;
+
+        /* Changed from row for better mobile layout */
+    }
+
+    .dragonball_container_h2 {
+        font-size: 1em;
+        /* Slightly smaller heading for small screens */
+        text-align: center;
+    }
+
+    .DB_Character_Container {
+        flex-wrap: wrap;
+        /* Ensure characters wrap properly on narrow viewports */
+        padding: 10px;
+    }
+
+    .character_info {
+        font-size: 16px;
+        /* More compact text on mobile */
+        padding: 10px;
+    }
+
+    .db_ul {
+        gap: 10px;
+        /* Slightly tighter spacing for mobile */
+
+    }
+
+    .titleSpan {
+        font-size: 0.9em;
+        padding: 6px 10px;
+    }
+}

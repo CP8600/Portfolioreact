@@ -51,11 +51,46 @@ a {
     color: inherit;
 }
 
-.desctiption {
-    font-size: 18px;
-    font-weight: 700;
-    color: red;
-    max-width: 100px;
-    min-width: fit-content;
-    background-color: saddlebrown;
+
+@media only screen and (max-width: 600px) {
+    .router_container {
+        /* background: linear-gradient(to top left, #1aaec5, #114d69); */
+        background: none;
+        background-color: rgb(228, 212, 108);
+        background-repeat: no-repeat;
+        /* fixed: was inline */
+
+    }
+
+    .ul {
+
+        font-size: 1.6em;
+
+    }
+
+    .li {
+        margin: 10px;
+        color: rgb(0, 0, 0);
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        text-align: center;
+        border-radius: 8px;
+        transition: transform 0.3s ease, color 0.3s ease;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .li:hover {
+        transform: scale(1.1);
+        color: cadetblue;
+    }
+
+    a {
+        text-decoration: none;
+        display: inline-block;
+        padding: 10px 20px;
+        color: inherit;
+    }
+
+
 }

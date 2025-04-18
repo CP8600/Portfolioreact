@@ -14,7 +14,8 @@ import Navbar from "./Components/Navbar/Navbar";
 import Todo from "./Pages/TodoList/Todo";
 import Music from "./Pages/MusicWeb/Music";
 import Dragonball from "./Pages/Dragonball/Dragonball-Page";
-import BookFinder_WithGoogle from "./Pages/BookFinder/BookFinder_WithGoogle";
+// import BookFinder_WithGoogle from "./Pages/BookFinder/BookFinder_WithGoogle";
+import Pokemon_page from "./Pages/Pokemon/Pokemon_page";
 const Layout = () => {
   const location = useLocation();
   return (
@@ -38,7 +39,8 @@ const router = createBrowserRouter(
         { path: "/todo", element: <Todo /> },
         { path: "music", element: <Music /> },
         { path: "/dragonball", element: <Dragonball /> },
-        { path: "/bookfinder", element: <BookFinder_WithGoogle /> },
+        { path: "/pokemon", element: <Pokemon_page /> },
+        // { path: "/bookfinder", element: <BookFinder_WithGoogle /> },
         // { path: "*", element: <Home /> }, // Catch-all route (optional)
       ],
     },
@@ -50,6 +52,6 @@ const router = createBrowserRouter(
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <RouterProvider basename={"/Portfolioreact"} router={router} />
   </StrictMode>
 );
