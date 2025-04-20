@@ -1,7 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import {
-  createBrowserRouter,
+  createHashRouter,
   Outlet,
   RouterProvider,
   useLocation,
@@ -27,7 +27,7 @@ const Layout = () => {
   );
 };
 
-const router = createBrowserRouter(
+const router = createHashRouter(
   [
     {
       path: "/",
