@@ -1,8 +1,12 @@
-const Get_Pokemon_Api = async () => {
+const Pokemon_Api = async () => {
   try {
-    const response = await fetch("https://pokeapi.co/api/v2/pokemon/", {
-      headers: { "Content-Type": "application/json" },
-    });
+    const response = await fetch(
+      // "https://pokeapi.co/api/v2/pokemon/",
+      "https://pokeapi.co/api/v2/pokemon?limit=151&offset=0",
+      {
+        headers: { "Content-Type": "application/json" },
+      }
+    );
 
     if (!response.ok) {
       throw new Error(`Http error! Status:${response.status}`);
@@ -18,4 +22,4 @@ const Get_Pokemon_Api = async () => {
   }
 };
 
-export default Get_Pokemon_Api;
+export default Pokemon_Api;
