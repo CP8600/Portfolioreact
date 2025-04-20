@@ -52,6 +52,6 @@ const router = createHashRouter(
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider basename={"/Portfolioreact"} router={router} />
+    <RouterProvider  router={router} />
   </StrictMode>
 );
