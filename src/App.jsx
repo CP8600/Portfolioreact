@@ -44,14 +44,14 @@ const router = createHashRouter(
         // { path: "*", element: <Home /> }, // Catch-all route (optional)
       ],
     },
-  ],
-  {
-    basename: "/Portfolioreact", // ✅ this is the correct place
-  }
+  ]
+  // {
+  //   basename: "/Portfolioreact", // ✅ this is the correct place
+  // }
 );
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider  router={router} />
+    <RouterProvider router={router} />
   </StrictMode>
 );
