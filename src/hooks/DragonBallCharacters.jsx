@@ -1,14 +1,14 @@
 // hooks/useDragonballCharacters.js
 import { useEffect, useState } from "react";
-import GetDragonballApi from "../api/DragonballApi/GetDragonballApi";
-import getTransformationsApi from "../api/DragonballApi/Transformations";
+import GetDragonballApi from "../Api/GetDragonballApi";
+import getTransformationsApi from "../Api/Transformations";
 
-const isMatchingCharacter = (base, transformed) => {
-  const baseName = base.split(" ")[0].toLowerCase();
-  return transformed.toLowerCase().startsWith(baseName);
-};
+const useDragonballCharacters = () => {
+  const isMatchingCharacter = (base, transformed) => {
+    const baseName = base.split(" ")[0].toLowerCase();
+    return transformed.toLowerCase().startsWith(baseName);
+  };
 
-export default function useDragonballCharacters() {
   const [characters, setCharacters] = useState([]);
   const [transformCharacter, setTransformCharacter] = useState([]);
 
@@ -48,4 +48,5 @@ export default function useDragonballCharacters() {
     setCharacters,
     transformCharacter,
   };
-}
+};
+export default useDragonballCharacters;

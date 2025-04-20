@@ -1,0 +1,119 @@
+.hero {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-align: center;
+    /* padding: 20px; */
+    /* Adds breathing room */
+}
+
+.hero_text {
+    text-align: center;
+    color: #ffffff;
+    line-height: 1.6;
+    /* Slightly increased for better readability */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* Ensures even spacing between elements */
+    background-color: rgba(0, 0, 0, 0.849);
+    width: 100vw;
+}
+
+.hero_text_h1 {
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    /* Adds a little space below */
+}
+
+.hero_text_p {
+    /* font-size: 15px; */
+    max-width: 500px;
+    /* Matches max width of container */
+    margin: 0 auto;
+    /* Centers text */
+}
+
+.sub_p {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+}
+
+
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../../dist/assets/earth.jpg') no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    /* opacity: 0.5; */
+    z-index: -1;
+
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 1.4rem;
+
+    }
+
+    .hero {
+        height: 100vh;
+        width: 100vw;
+        background-color: black;
+        /* Ensures full width on mobile */
+    }
+
+    /* removes background image on mobile */
+    .hero::before {
+        background: none;
+    }
+
+    .hero_text {
+        text-align: center;
+        color: #ffffff;
+        line-height: 1.6;
+        /* Slightly increased for better readability */
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        /* Ensures even spacing between elements */
+        background-color: rgba(0, 0, 0, 0.849);
+        width: 100vw;
+
+    }
+
+    .hero_text_h1 {
+        font-size: 1.3rem;        font-weight: 600;
+        /* margin-bottom: 10px; */
+        /* Adds a little space below */
+    }
+
+    .hero_text_p {
+        /* font-size: 15px; */
+        max-width: 500px;
+        /* Matches max width of container */
+        /* margin: 0 auto; */
+        /* Centers text */
+                font-size: 1.3rem;
+    }
+
+    .sub_p {
+        font-size: 1.3rem;
+        font-weight: 400;
+        /* margin-bottom: 10px; */
+        color: rgb(255, 255, 255);
+    }
+}

@@ -1,31 +1,16 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import {
-  createHashRouter,
-  Outlet,
-  RouterProvider,
-  useLocation,
-} from "react-router-dom";
+import { createHashRouter, Outlet, RouterProvider } from "react-router-dom";
 import "./index.css";
-import PageRouter from "./Pages/PageRouter/PageRouter";
-import Home from "./Pages/Home/Home";
-import ShowBubbles from "./Pages/Bubbles/Bubbles";
-import Navbar from "./Components/Navbar/Navbar";
-import Todo from "./Pages/TodoList/Todo";
-import Music from "./Pages/MusicWeb/Music";
-import Dragonball from "./Pages/Dragonball/Dragonball-Page";
+import Layout from "./Layout";
+import PageRouter from "./Pages/PageRouter";
+import Home from "./Pages/Home";
+import ShowBubbles from "./Pages/Bubbles";
+import Todo from "./Pages/Todo";
+import Music from "./Pages/Music";
+import Dragonball from "./Pages/Dragonball-Page";
 // import BookFinder_WithGoogle from "./Pages/BookFinder/BookFinder_WithGoogle";
-import Pokemon_page from "./Pages/Pokemon/Pokemon_page";
-const Layout = () => {
-  const location = useLocation();
-  return (
-    <>
-      {location.pathname !== "/" && <Navbar />}
-
-      <Outlet />
-    </>
-  );
-};
+import Pokemon_page from "./Pages/Pokemon_page";
 
 const router = createHashRouter(
   [
