@@ -1,5 +1,5 @@
 import { memo } from "react";
-import styles from "../Components/CharacterCard.module.css";
+import styles from "../CSS/CharacterCard.module.css";
 
 const CharacterCard = ({ character, onTransform, hasTransformations }) => {
   const { image, maxKi, affiliation, name, char /* isTransformed */ } =

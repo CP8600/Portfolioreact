@@ -68,10 +68,9 @@ const Pokemon_page = () => {
         )}
 
         <section className={styles.pokemon_details}>
-          <h2>Pokemon Details</h2>
           {pokemonDetails ? (
             <div>
-              <h3 className={styles.pokemon_name}>{pokemonDetails.name}</h3>
+              <h2 className={styles.pokemon_name}>{pokemonDetails.name}</h2>
               <img
                 className={styles.pokemon_img}
                 src={

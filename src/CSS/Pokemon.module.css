@@ -105,11 +105,13 @@
 }
 
 .pokemon_name {
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: bold;
     text-align: center;
     margin-top: 12px;
-    color: #333;
+    color: #ffffff;
+    font-weight: 800;
+    text-transform: capitalize;
 }
 
 @keyframes flash {
@@ -171,6 +173,7 @@
 
     .pokemon_name {
         font-size: 1.3rem;
+        color: red;
     }
 
     .masterball {

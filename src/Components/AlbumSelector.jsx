@@ -2,7 +2,7 @@
 import ArtistCard from "./Artist_Card";
 import styles from "../CSS/Music.module.css";
 
-const AlbumSelector = ({ artists, albums, onSelect, selectedIndex }) => {
+const AlbumSelector = ({ artists, albums, onSelect, selectedAlbum }) => {
   return (
     <section className={styles.left_box}>
       <h2>Artists Info:</h2>
@@ -13,8 +13,8 @@ const AlbumSelector = ({ artists, albums, onSelect, selectedIndex }) => {
             artist={artist}
             album={albums[index]}
             index={index}
-            onClick={onSelect}
-            isSelected={selectedIndex === index}
+            onClick={() => onSelect(albums[index])} // Pass the full album object
+            isSelected={selectedAlbum?.id === albums[index]?.id} // Compare the album ID
           />
         ))
       ) : (
