@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Pokemon_Api from "../Api/Get_Pokemon_Api"; //gets pokemon data from api
 import MasterBall_Api from "../Api/Get_MasterBall_Api."; //gets masterball data from api
-import MB from "../../dist/assets/Masterball.png"; //gets masterball image from src
+import MB from "../../src/Assets/Images/Masterball.png"; //gets masterball image from src
 import styles from "../CSS/Pokemon.module.css"; //imports css styles
 
 const Pokemon_page = () => {
