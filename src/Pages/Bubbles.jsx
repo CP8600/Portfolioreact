@@ -1,8 +1,8 @@
 import styles from "../CSS/Bubbles.module.css"; // imports CSS styles
-import UseBubbles from "../hooks/UseBubbles";
+import useBubbles from "../hooks/useBubbles";
 
 const ShowBubbles = () => {
-  const { bubbles, startBubbles, endBubbles } = UseBubbles();
+  const { bubbles, startBubbles, endBubbles } = useBubbles();
 
   return (
     <div className={styles.bubbleContainer}>
@@ -12,8 +12,7 @@ const ShowBubbles = () => {
         onMouseDown={startBubbles}
         onMouseUp={endBubbles}
       >
-        {/* <span className={styles.spanBtn}>Create Bubbles</span> */}
-        Create Bubbles
+        Press to Create Bubble
       </button>
       {bubbles?.map((bubble) => (
         <div

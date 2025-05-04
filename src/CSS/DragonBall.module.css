@@ -1,8 +1,10 @@
 .dragonballContainer {
     min-height: 100vh;
+    height: 100%;
     width: 100%;
     text-align: center;
     background-color: rgba(37, 32, 32, 0.953);
+    /* background-color: rgba(85, 47, 255, 0.953); */
     overflow-y: scroll;
 }
 
@@ -32,7 +34,6 @@
     font-weight: 800;
     color: white;
     letter-spacing: 1.6px;
-
 }
 
 .DB_Character_Container {
@@ -75,7 +76,6 @@
     .dragonballContainer {
         background-color: rgba(42, 42, 42, 0.923);
         flex-direction: column;
-
         /* Changed from row for better mobile layout */
     }
 
@@ -100,7 +100,6 @@
     .db_ul {
         gap: 10px;
         /* Slightly tighter spacing for mobile */
-
     }
 
     .titleSpan {

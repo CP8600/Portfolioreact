@@ -6,7 +6,7 @@ const CharacterCard = ({ character, onTransform, hasTransformations }) => {
     character;
 
   return (
-    <li className={styles.db_li}>
+    <li className={styles.db_li}>=
       <img
         src={image} // Always displays the character's current state
         alt={name}

@@ -1,102 +1,47 @@
 .navbar {
     transition: all 0.8s ease-in-out;
-    z-index: 1001;
+    z-index: 1;
     top: 0;
     left: 0;
     width: 100%;
     height: fit-content;
-    background-color: rgb(0, 0, 0);
-    /* padding: 10px 0; */
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     border-bottom: solid rgb(34, 34, 34) 2px;
-
-}
-
-.navbar_top {
-    width: 100%;
-    height: fit-content;
-    background-color: rgb(0, 0, 0);
-    /* padding: 10px 0; */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    left: 0;
-    border-bottom: solid rgb(34, 34, 34) 2px;
-
-}
-
-/* Push content down when navbar is at the top */
-.navbar_top~.content {
-    margin-top: 60px;
-    /* Adjust based on navbar height */
-}
-
-
-.navbar_left {
-    background-color: rgba(0, 0, 0, 0.699);
-    position: fixed;
-    left: 0;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    height: 100vh;
-    width: 15vw;
-    border-right: solid white 1px;
-    transition: all 0.8s ease-in-out;
-}
-
-/* Push content right when navbar is left-aligned */
-.navbar_left~.content {
-    margin-left: 15vw;
-    /* Adjust based on navbar width */
+    font-size: 1.5em;
+    font-weight: 700;
+    /* background-color: wheat; */
+    background-color: rgba(85, 47, 255, 0.953);
 }
 
 .button {
-    background-color: white;
+    /* background-color: white; */
     color: black;
 }
 
-.navbar_left ul {
+.ul {
     display: flex;
+    flex-flow: row;
     justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: inherit;
     padding: 0;
     margin: 0;
-    flex-direction: column;
-
+    color: black;
 }
 
-.navbar_ul {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    height: inherit;
-    padding: 0;
-    margin: 0;
-    flex-direction: row;
-}
-
-.navbar_li {
+.li {
     list-style: none;
-    font-size: 1.5em;
     cursor: pointer;
-}
-
-.navbar-li:hover {
-    color: red;
-}
-
-.a {
     text-decoration: none;
     color: inherit;
     line-height: 1;
     cursor: pointer;
+}
+
+.navbar_a:hover {
+    color: rgb(255, 210, 64);
 }

@@ -1,36 +1,24 @@
 .hero {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100vh;
-    width: 100%;
-    background-color: black;
-    overflow: hidden;
-    text-transform: capitalize;
     font-size: 2rem;
-    color: #ffffff;
-
 }
 
-.sub_p:hover{
-    color: #9c2323; 
+.sub_p:hover {
+    color: #9c2323;
     font-weight: 600;
-
+    /*   transform: scale(1.2);
+    transition-duration: .5s; */
 }
+
 .construction {
     color: #e8ff38;
-
 }
 
 @media only screen and (max-width: 600px) {
     body {}
 
     .hero {
-        font-size: 1.4rem;
+        font-size: 3rem;
         width: 100vw;
         background-color: black;
     }
-
-
 }

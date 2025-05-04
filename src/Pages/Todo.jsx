@@ -13,8 +13,9 @@ const ToDo = () => {
 
   return (
     <section className="todoContainer">
-      <h2 className="todo-header">Todo List</h2>
+      {/* <h2 className="todo-header">Todo List</h2> */}
       <TodoInput onAdd={handleAddTodo} />
+
       <ol className="todo-list">
         {todos.length > 0 ? (
           todos.map((item) => (

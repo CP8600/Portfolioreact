@@ -1,0 +1,72 @@
+.board {
+    background-color: rgb(132, 132, 132);
+    width: 640px;
+    height: 640px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.blackSquare,
+.whiteSquare {
+    width: 5rem;
+    height: 5rem;
+}
+
+.blackSquare {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.whiteSquare {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.blackSquare {
+    background-color: black;
+    background: linear-gradient(to bottom right, #000000 30%, #434343 70%);
+}
+
+
+.whiteSquare {
+    background-color: white;
+    background: linear-gradient(to bottom right, #ffffff 30%, #cacaca 70%);
+
+}
+
+.piece {
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.piece:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
+.piece:active {
+    transform: scale(0.9);
+    transition: transform 0.2s;
+}
+
+.piece.white {
+    color: white;
+}
+
+.piece.black {
+    color: black;
+}
+
+.chessPiece {
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    cursor: pointer;
+}

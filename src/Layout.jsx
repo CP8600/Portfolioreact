@@ -5,7 +5,8 @@ const Layout = () => {
   const location = useLocation();
   return (
     <>
-      {location.pathname !== "/" && <Navbar />}
+      {location.pathname !== "/"}
+      <Navbar />
       <Outlet />
     </>
   );

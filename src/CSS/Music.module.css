@@ -17,7 +17,7 @@
     /* Space at the top */
     overflow-y: auto;
     /* Allow scrolling */
-    height: 100vh;
+    height: 100%;
     /* Full viewport height */
     
 }

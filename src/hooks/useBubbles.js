@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import GenerateBubble from "../Helpers/BubbleHelper";
 
-const UseBubbles = () => {
+const useBubbles = () => {
   const [bubbles, setBubbles] = useState([]);
   const bubbleRef = useRef(null);
 
@@ -39,4 +39,4 @@ const UseBubbles = () => {
     endBubbles,
   };
 };
-export default UseBubbles;
+export default useBubbles;

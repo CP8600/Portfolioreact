@@ -1,5 +1,4 @@
 import styles from "../CSS/PageRouter.module.css"; // imports CSS styles
-
 import { Link } from "react-router-dom";
 const PageRouter = () => {
   return (
@@ -19,6 +18,9 @@ const PageRouter = () => {
         </li>
         <li className={styles.li}>
           <Link to={"/pokemon"}>Pokemon</Link>
+        </li>
+        <li className={styles.li}>
+          <Link to={"/chess"}>Chess</Link>
         </li>
         {/* <li className={styles.li}>
           <Link to={"/bookfinder"}>Book Finder</Link>

@@ -1,4 +1,5 @@
 .todoContainer {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,29 +28,41 @@
     color: black;
     display: flex;
     flex-direction: column;
+
 }
 
 /* ol list  */
-.todoList {
+.todo-list {
     white-space: inherit;
     overflow: scroll;
     width: 100%;
     display: inline-block;
-
     padding-left: 20px;
-    /* optional: controls indentation */
     text-align: left;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: auto;
+    width: 80vw;
+    overflow: scroll;
+    list-style-position: inside;
+    text-align: center;
+    background-color: saddlebrown;
 }
 
 /* li in list */
 .todo-list-item {
-    /* margin: 10px 0; */
-    width: 100%;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    text-overflow: clip;
+    margin: .4rem;
+    text-indent: 10px;
+    /* width: 100%;
     list-style-type: decimal;
-    /* ensures numbers show */
-    list-style-position: outside;
+    list-style-position: outsiide;
     font-size: 1.4em;
-    /* keeps number aligned with text */
     padding: 5px;
     color: #ffc23e;
     line-height: 1.5;
@@ -57,7 +70,7 @@
     position: relative;
     justify-content: space-between;
     text-align: left;
-    text-transform: capitalize;
+    text-transform: capitalize; */
 
 }
 
@@ -66,7 +79,9 @@
     justify-content: center;
     align-items: center;
     /* margin-top: 45px; */
-    margin: 10px;
+  height: 300px;
+    position: static;
+    top: 0;
 }
 
 .todo-input {
@@ -97,9 +112,6 @@
     transition: background-color 0.3s ease;
 }
 
-.todo-add-btn:hover {
-    background-color: #e15a2e;
-}
 
 .empty-state {
     list-style: none;
@@ -107,6 +119,62 @@
     color: #ffc23e;
 }
 
-.move {
-    background-color: red;
+
+
+@media (max-width: 768px) {
+    .todoContainer {
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(to top right, rgb(39, 120, 78), rgb(17, 25, 47));
+
+    }
+
+    .todo-header {
+        width: 100vw;
+
+    }
+
+    .todo-add {
+        /* margin-right: 40px;
+        margin-left: 40px;
+        position: relative; */
+    }
+
+    /* ol list  */
+    .todo-list {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: 50%;
+        width: 80vw;
+        overflow: scroll;
+        list-style-position: inside;
+        text-align: center;
+    }
+
+    /* li in list */
+    .todo-list-item {
+        text-align: left;
+        justify-content: center;
+        align-items: center;
+        text-overflow: clip;
+        margin: .4rem;
+        text-indent: 10px;
+    }
+
+    .todo-add {
+        width: auto;
+        padding: 10px;
+    }
+
+    .todo-input {
+        width: 100vw;
+    }
+
+    .todo-add-btn {
+        width: 100px;
+    }
+
+
 }

@@ -1,12 +1,8 @@
 import styles from "../CSS/DragonBall.module.css";
 import CharacterCard from "../Components/CharacterCard";
-
-import useDragonballCharacters from "../hooks/DragonBallCharacters";
+import useDragonballCharacters from "../hooks/useDragonballCharacters";
 
 function Dragonball() {
-  // State to store the base characters fetched from the API
-
-  // State to store the transformations mapped to character IDs
   const { characters, setCharacters, transformCharacter } =
     useDragonballCharacters();
 
@@ -29,7 +25,7 @@ function Dragonball() {
               image: nextTransformation.image,
               name: nextTransformation.name,
               isTransformed: true,
-              // baseForm: character.baseForm || { ...character },
+              baseForm: character.baseForm || { ...character },
               transformationIndex: nextIndex,
             }
           : char

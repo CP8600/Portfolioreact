@@ -27,16 +27,14 @@ const useDragonballCharacters = () => {
 
     const fetchTransformations = async () => {
       const response = await getTransformationsApi();
-      const matched = {};
-
-      characters.forEach((character) => {
+      const matched = characters.reduce((acc, character) => {
         const transformation = response.filter((form) =>
           isMatchingCharacter(character.name, form.name)
         );
-        if (transformation) {
-          matched[character.id] = transformation;
-        }
-      });
+        acc[character.id] = transformation;
+        return acc;
+      }, {});
+
       setTransformCharacter(matched);
     };
 

@@ -11,19 +11,22 @@ const TodoInput = ({ onAdd }) => {
   };
 
   return (
-    <div className="todo-add">
-      <input
-        ref={inputRef}
-        type="text"
-        placeholder="Add your task"
-        className="todo-input"
-        maxLength={50}
-      />
+    <>
+      <h2 className="todo-header">Todo List</h2>
+      <section className="todo-add">
+        <input
+          ref={inputRef}
+          type="text"
+          placeholder="Add your task"
+          className="todo-input"
+          maxLength={20}
+        />
 
-      <div onClick={handleClick} className="todo-add-btn">
-        Add
-      </div>
-    </div>
+        <div onClick={handleClick} className="todo-add-btn">
+          Add
+        </div>
+      </section>
+    </>
   );
 };
 
