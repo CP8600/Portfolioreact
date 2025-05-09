@@ -25,12 +25,10 @@ const Home = () => {
       <section className={styles.middlehero}>
         {" "}
         <h1>something else goes here</h1>
-        <p>If interested call me! I also do door Dash but that is temp</p>{" "}
       </section>
       <section className={styles.bottomhero}>
         {" "}
         <h1>something else goes here</h1>
-        <p>If interested call me! I also do door Dash but that is temp</p>{" "}
       </section>
     </div>
   );

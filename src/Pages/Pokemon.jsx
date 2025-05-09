@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Pokemon_Api from "../Api/Get_Pokemon_Api"; //gets pokemon data from api
 import MasterBall_Api from "../Api/Get_MasterBall_Api."; //gets masterball data from api
-import MB from "../../src/Assets/Images/Masterball.png"; //gets masterball image from src
+import PokeBall from "../../Images/Masterball.png"; //gets masterball image from src
 import styles from "../CSS/Pokemon.module.css"; //imports css styles
 
 const Pokemon_page = () => {
@@ -13,7 +13,8 @@ const Pokemon_page = () => {
   useEffect(() => {
     const fetchData = async () => {
       const res = await MasterBall_Api(); //fetches masterball data
-      if (res?.sprites?.default) {//checks if default sprite exists
+      if (res?.sprites?.default) {
+        //checks if default sprite exists
         setMasterBall(res.sprites.default); // ✅ set image URL
       }
     };
@@ -22,7 +23,7 @@ const Pokemon_page = () => {
   useEffect(() => {
     const fetchData = async () => {
       const data = await Pokemon_Api(); //fetches pokemon data
-      setPokemon(data);// sets pokemon data
+      setPokemon(data); // sets pokemon data
     };
 
     fetchData();
@@ -30,7 +31,8 @@ const Pokemon_page = () => {
 
   useEffect(() => {
     const fetchDetails = async () => {
-      if (selectedPokemon) {//checks if selected pokemon exists
+      if (selectedPokemon) {
+        //checks if selected pokemon exists
         const response = await fetch(selectedPokemon.url); //fetches selected pokemon data
         const data = await response.json(); //parses response to json
         setPokemonDetails(data); //sets pokemon details
@@ -38,7 +40,7 @@ const Pokemon_page = () => {
     };
 
     fetchDetails();
-  }, [selectedPokemon]);//sets selected pokemon data
+  }, [selectedPokemon]); //sets selected pokemon data
 
   return (
     <div>
@@ -80,7 +82,11 @@ const Pokemon_page = () => {
               />
             </div>
           ) : masterBall ? (
-            <img className={styles.masterball} src={MB} alt="Master Ball" />
+            <img
+              className={styles.masterball}
+              src={PokeBall}
+              alt="Master Ball"
+            />
           ) : (
             <p>Select a Pokemon to see details</p>
           )}

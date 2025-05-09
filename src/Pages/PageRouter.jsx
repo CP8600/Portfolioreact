@@ -5,13 +5,7 @@ const PageRouter = () => {
     <div className={styles.router_container}>
       <ul className={styles.ul}>
         <li className={styles.li}>
-          <Link to={`/bubbles`}>Bubbles</Link>
-        </li>
-        <li className={styles.li}>
-          <Link to={"/todo"}>Todo List</Link>
-        </li>
-        <li className={styles.li}>
-          <Link to={"/music"}>Spotify Clone</Link>
+          <Link to={"/music"}>Spotify</Link>
         </li>
         <li className={styles.li}>
           <Link to={"/dragonball"}>Dragonball</Link>
@@ -19,9 +13,7 @@ const PageRouter = () => {
         <li className={styles.li}>
           <Link to={"/pokemon"}>Pokemon</Link>
         </li>
-        <li className={styles.li}>
-          <Link to={"/chess"}>Chess</Link>
-        </li>
+        <li className={styles.li}></li>
         {/* <li className={styles.li}>
           <Link to={"/bookfinder"}>Book Finder</Link>
         </li> */}
