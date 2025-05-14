@@ -57,6 +57,7 @@ function Dragonball() {
                 character={character}
                 onTransform={handleTransform}
                 hasTransformations={!!transformCharacter[character.id]?.length}
+                
               />
             ))
           ) : (

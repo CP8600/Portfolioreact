@@ -11,6 +11,7 @@ import Music from "./Pages/Music";
 import Dragonball from "./Pages/Dragonball";
 import Chess from "./Pages/Chess";
 import Pokemon_page from "./Pages/Pokemon";
+import Somewebsite from "./Pages/somePage";
 
 const router = createHashRouter([
   {
@@ -25,6 +26,7 @@ const router = createHashRouter([
       { path: "/dragonball", element: <Dragonball /> },
       { path: "/pokemon", element: <Pokemon_page /> },
       { path: "/chess", element: <Chess /> },
+      { path: "/somepage", element: <Somewebsite /> },
     ],
   },
 ]);

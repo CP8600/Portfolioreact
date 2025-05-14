@@ -1,0 +1,55 @@
+.page {
+    background-color: cadetblue;
+    color: rgb(255, 255, 255);
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.linkContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+
+.firstLink,
+.secondLink,
+.thirdLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+}
+
+.firstLink {
+    left: 130px;
+    top: 350px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.secondLink {
+    left: 150px;
+    top: 100px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: blue;
+}
+
+.thirdLink {
+    left: 230px;
+    top: 250px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: green;
+}

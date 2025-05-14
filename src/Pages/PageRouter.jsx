@@ -4,6 +4,12 @@ const PageRouter = () => {
   return (
     <div className={styles.router_container}>
       <ul className={styles.ul}>
+        <li className={styles.li}>
+          <Link to={"/bubbles"}>Bubbles</Link>
+        </li>
+        <li className={styles.li}>
+          <Link to={"/todo"}>Todo</Link>
+        </li>
         {/* <li className={styles.li}>
           <Link to={"/music"}>Spotify</Link>
         </li> */}
@@ -14,6 +20,9 @@ const PageRouter = () => {
           <Link to={"/pokemon"}>Pokemon</Link>
         </li>
         <li className={styles.li}></li>
+        {/* <li className={styles.li}>
+          <Link to={"/somepage"}>Some Website</Link>
+        </li> */}
         {/* <li className={styles.li}>
           <Link to={"/bookfinder"}>Book Finder</Link>
         </li> */}

@@ -3,6 +3,8 @@
     flex-direction: column;
     height: 100vh;
     font-size: 1.5rem;
+    background-color: rgb(80, 67, 217);
+    color: rgb(19, 19, 19);
 }
 
 .h2 {

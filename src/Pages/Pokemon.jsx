@@ -43,9 +43,10 @@ const Pokemon_page = () => {
   }, [selectedPokemon]); //sets selected pokemon data
 
   return (
-    <div>
-      <h2 className={styles.h1}>Pokemon List</h2>
+    <div className={styles.pokemon_page}>
       <div className={styles.pokemon_pageContainer}>
+        <h2 className={styles.h1}>Pokemon List</h2>
+
         {pokemon ? (
           <div className={styles.btn_container}>
             <ul className={styles.ul}>
