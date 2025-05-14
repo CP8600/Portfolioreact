@@ -4,9 +4,9 @@ const PageRouter = () => {
   return (
     <div className={styles.router_container}>
       <ul className={styles.ul}>
-        <li className={styles.li}>
+        {/* <li className={styles.li}>
           <Link to={"/music"}>Spotify</Link>
-        </li>
+        </li> */}
         <li className={styles.li}>
           <Link to={"/dragonball"}>Dragonball</Link>
         </li>
