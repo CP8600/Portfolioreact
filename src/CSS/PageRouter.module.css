@@ -51,6 +51,42 @@ a {
     color: inherit;
 }
 
+.scrollContainer {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    margin: 10px;
+    overflow: hidden;
+    width: 100%;
+    white-space: nowrap;
+    position: relative;
+}
+
+
+
+.scrollText {
+    animation: scrollText 5s linear infinite;
+    display: flex;
+    font-size: 1.4em;
+    margin: 5px;
+    padding: 10px;
+    will-change: transform;
+
+
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(250%);
+    }
+
+    50% {
+        transform: translateX(50%);
+    }
+
+    100% {
+        transform: translateX(250%);
+    }
+}
 
 @media only screen and (max-width: 600px) {
     .router_container {

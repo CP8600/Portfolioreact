@@ -3,8 +3,10 @@
     flex-direction: column;
     height: 100vh;
     font-size: 1.5rem;
-    background-color: rgb(80, 67, 217);
-    color: rgb(19, 19, 19);
+    background-color: rgb(2, 87, 130);
+    /* background-color: rgb(74, 146, 187); */
+    color: rgb(255, 247, 247);
+    overflow-x: scroll;
 }
 
 .h2 {
@@ -30,29 +32,13 @@
 .hero,
 .middlehero,
 .bottomhero {
-    height: 100%;
+    /* height: 100%; */
     text-align: center;
     align-items: center;
     align-self: center;
     width: 80%;
     margin: 10px;
 }
-
-/* Updated from `.hero` to `.hero-section` */
-/* The CSS code you provided is styling three different sections of a webpage. */
-/* .hero {
-    background-color: rgb(255, 188, 44);
-}
-
-.middlehero {
-    background-color: blue;
-}
-
-.bottomhero {
-    background-color: green;
-} */
-
-/* Updated from `.p` to `.hero-text` */
 .hero-text {
     text-align: center;
     font-size: 1.3rem;

@@ -43,9 +43,14 @@ function Dragonball() {
     <div className={styles.dragonballContainer}>
       <header className={styles.header}>
         <h1 className={styles.h1}>Dragonball Characters</h1>
-        {/* <span className={styles.titleSpan}>
-          Character Information retrieved from <h3>dragonball-api.com</h3>
-        </span> */}
+        <span className={styles.titleSpan}>
+          Character Information retrieved from{" "}
+          <h3>
+            <a className={styles.a} href="https://web.dragonball-api.com/">
+              dragonball-api.com
+            </a>
+          </h3>
+        </span>
       </header>
       <section className={styles.DB_Character_Container}>
         <ul className={styles.db_ul}>
@@ -56,8 +61,7 @@ function Dragonball() {
                 key={character.id}
                 character={character}
                 onTransform={handleTransform}
-                hasTransformations={!!transformCharacter[character.id]?.length}
-                
+                hasTransformations={transformCharacter[character.id]?.length}
               />
             ))
           ) : (

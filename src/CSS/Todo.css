@@ -32,15 +32,15 @@
 
 .todo-list {
     width: 100%;
-    height: auto;
-    overflow-y: auto;
-    padding-left: 40px;
+    max-height: 200px;
+    height: 200px;
     list-style-type: decimal;
-    list-style-position: outside;
+    list-style-position: inside;
     color: #ffc23e;
-    display: flex;
-    flex-direction: column;
+    overflow-x: scroll;
     text-align: left;
+    width: 500px;
+
 }
 
 .todo-list-item {
@@ -49,6 +49,7 @@
     font-size: 1.4em;
     line-height: 1.5;
     text-transform: capitalize;
+
 }
 
 .todo-add {
@@ -56,7 +57,7 @@
     justify-content: center;
     align-items: center;
     height: 300px;
-    position: static;
+
 }
 
 .todo-input {
@@ -72,19 +73,18 @@
 }
 
 .todo-add-btn {
-    width: 187px;
     height: 80px;
-    margin-left: -100px;
     border-radius: 50px;
     background-color: #ff6739;
     color: #ffffff;
-    font-size: 26px;
     font-weight: 600;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    width: 50%;
+    position: static;
 }
 
 .todo-add-btn:hover,

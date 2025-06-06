@@ -4,7 +4,6 @@
     width: 100%;
     text-align: center;
     background-color: rgba(37, 32, 32, 0.953);
-    /* background-color: rgba(85, 47, 255, 0.953); */
     overflow-y: scroll;
 }
 
@@ -14,20 +13,28 @@
     align-items: center;
     width: 100%;
     padding: 0 20px;
-    /* Optional spacing */
 }
 
 .h1 {
     margin-left: auto;
 }
 
-.titleSpan {
+/* .titleSpan {
     position: absolute;
     left: 0;
     background-color: rgba(253, 20, 20, 0.923);
     padding: 10px;
     font-weight: 600;
+} */.titleSpan {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    width: fit-content;
+    height: fit-content;
+    background-color: rgba(253, 20, 20, 0.923);
+    font-weight: 600;
 }
+
 
 .dragonball_container_h2 {
     font-size: 1.2em;
@@ -35,17 +42,14 @@
     color: white;
     letter-spacing: 1.6px;
 }
-
+.a {
+    color: rgb(0, 255, 51);
+}
 .DB_Character_Container {
     width: 100vw;
     display: inline-flex;
-    /* flex-wrap: wrap; */
-    /* Allows characters to wrap on small screens */
     justify-content: center;
-    /* Centers items horizontally */
     padding: 20px;
-    /* margin-top: 30px; */
-    /* Adds spacing around the container */
 }
 
 .character_info {
@@ -64,9 +68,7 @@
 .db_ul {
     display: flex;
     flex-wrap: wrap;
-    /* Makes sure items wrap on smaller screens */
     gap: 15px;
-    /* Adds space between items */
     justify-content: center;
 
 }
@@ -76,30 +78,25 @@
     .dragonballContainer {
         background-color: rgba(42, 42, 42, 0.923);
         flex-direction: column;
-        /* Changed from row for better mobile layout */
     }
 
     .dragonball_container_h2 {
         font-size: 1em;
-        /* Slightly smaller heading for small screens */
         text-align: center;
     }
 
     .DB_Character_Container {
         flex-wrap: wrap;
-        /* Ensure characters wrap properly on narrow viewports */
         padding: 10px;
     }
 
     .character_info {
         font-size: 16px;
-        /* More compact text on mobile */
         padding: 10px;
     }
 
     .db_ul {
         gap: 10px;
-        /* Slightly tighter spacing for mobile */
     }
 
     .titleSpan {

@@ -29,16 +29,16 @@ const Home = () => {
       </section>
       <section className={styles.middlehero}>
         {" "}
-        <p className={styles.p}>
+        {/* <p className={styles.p}>
           I currently have been working as a forklift driver for Heartland
           Coca-Cola. I have always had a passion for website building and
           programming.
-        </p>
+        </p> */}
       </section>
       <section className={styles.bottomhero}>
         {" "}
         <p className={styles.p}>
-          I hope to find a new career path to take me to new career heights as
+          Hoping to find a new career path to take me to new career heights as
           well as adding to my progamming and website building talent.
         </p>
       </section>

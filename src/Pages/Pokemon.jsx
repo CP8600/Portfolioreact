@@ -46,7 +46,12 @@ const Pokemon_page = () => {
     <div className={styles.pokemon_page}>
       <div className={styles.pokemon_pageContainer}>
         <h2 className={styles.h1}>Pokemon List</h2>
-
+        <span className={styles.titleSpan}>
+          Character Information retrieved from{" "}
+          <h3>
+            <a className={styles.a} href="https://pokeapi.co/">pokeapi.co/</a>
+          </h3>
+        </span>
         {pokemon ? (
           <div className={styles.btn_container}>
             <ul className={styles.ul}>

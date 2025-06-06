@@ -1,9 +1,8 @@
-import { memo } from "react";
+import React, { memo } from "react";
 import styles from "../CSS/CharacterCard.module.css";
 
-const CharacterCard = ({ character, onTransform, hasTransformations }) => {
-  const { image, maxKi, affiliation, name, char /* isTransformed */ } =
-    character;
+const CharacterCard = memo(({ character, onTransform, hasTransformations }) => {
+  const { image, maxKi, affiliation, name, char, isTransformed } = character;
 
   return (
     <li className={styles.db_li}>
@@ -20,8 +19,9 @@ const CharacterCard = ({ character, onTransform, hasTransformations }) => {
           <button
             className={styles.transform_btn}
             onClick={() => onTransform(character)}
+            
           >
-            {/* {isTransformed ? "Next Form" : "Transform"} */}
+            {isTransformed ? "Next Form" : "Transform"}
             Transform
           </button>
         ) : (
@@ -32,7 +32,7 @@ const CharacterCard = ({ character, onTransform, hasTransformations }) => {
       </section>
     </li>
   );
-};
+});
 
 // export default CharacterCard;
-export default memo(CharacterCard);
+export default CharacterCard;
